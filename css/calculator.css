@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+.container {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-family: Nanum Myeongjo, sans-serif;
+    font-weight: 600;
+    margin: 50px;
+    font-size: 2.2rem;
+}
+
+#calculator {   
+    width: 30%;
+    background-color: #505050;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#result_final {
+    width: 94%;
+    margin: 2%;
+    margin-bottom: 30px;
+    height: 40px;
+    padding: 0px 7px;
+    border-radius: 10px;
+    text-align: end;
+    font-size: 1.05rem;
+    letter-spacing: 1px;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+    
+}
+
+.btn {
+    margin: 3px 5px;
+    height: 45px;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background-color: rgb(219, 214, 214);
+}
+
+
+.btn-lg {
+    margin: 5px;
+    height: 40px;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    background-color: rgba(199, 199, 196, 0.787);;
+}
+
+.btnclr {
+    background-color:  rgba(224, 224, 217, 0.787);
+}
+
+/* MEDIA QUERIE Tablet Screen View */
+
+@media (max-width:991px) and (min-width:768px) {
+    #calculator {
+        width: 40%;
+    }
+}
+
+/* MEDIA QUERIE Mobile large screen */
+
+@media (max-width:767px) and (min-width:579px){
+    #calculator {
+        width: 50%;
+    }
+}
+
+@media (max-width:578px) and (min-width:449px){
+    #calculator {
+        width: 60%;
+    }
+    .keys {
+        grid-gap:3px;
+    }
+
+}
+
+@media (max-width:448px) {
+    #calculator {
+        width: 60%;
+    }
+    .keys {
+        grid-gap:3px;
+    }
+}
